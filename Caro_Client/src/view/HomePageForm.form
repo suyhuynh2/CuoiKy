@@ -69,24 +69,24 @@
                   <EmptySpace max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" alignment="1" attributes="0">
-                          <Component id="messageInput" min="-2" pref="377" max="-2" attributes="0"/>
+                          <Component id="jTextField_MessageInput" min="-2" pref="377" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
-                          <Component id="sendMessageButton" max="32767" attributes="0"/>
+                          <Component id="jButton_SendMessage" max="32767" attributes="0"/>
                       </Group>
                       <Component id="jScrollPane1" max="32767" attributes="0"/>
                       <Component id="jPanel1" alignment="0" max="32767" attributes="0"/>
                   </Group>
                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="1" attributes="0">
-                      <Component id="quickGameButton" alignment="0" max="32767" attributes="0"/>
-                      <Component id="goRoomButton" alignment="0" max="32767" attributes="0"/>
-                      <Component id="createRoomButton" alignment="0" max="32767" attributes="0"/>
-                      <Component id="findRoomButton" alignment="0" max="32767" attributes="0"/>
-                      <Component id="scoreBoardButton" alignment="0" max="32767" attributes="0"/>
-                      <Component id="scoreBotButton" alignment="0" max="32767" attributes="0"/>
-                      <Component id="exitGameButton" alignment="1" max="32767" attributes="0"/>
-                      <Component id="playWithBotButton" alignment="0" max="32767" attributes="0"/>
-                      <Component id="friendListButton" pref="394" max="32767" attributes="0"/>
+                      <Component id="jButton_QuickGame" alignment="0" max="32767" attributes="0"/>
+                      <Component id="jButton_GoRoom" alignment="0" max="32767" attributes="0"/>
+                      <Component id="jButton_CreateRoom" alignment="0" max="32767" attributes="0"/>
+                      <Component id="jButton_FindRoom" alignment="0" max="32767" attributes="0"/>
+                      <Component id="jButton_ScoreBoard" alignment="0" max="32767" attributes="0"/>
+                      <Component id="jButton_ScoreBot" alignment="0" max="32767" attributes="0"/>
+                      <Component id="jButton_ExitGame" alignment="1" max="32767" attributes="0"/>
+                      <Component id="jButton_PlayWithBot" alignment="0" max="32767" attributes="0"/>
+                      <Component id="jButton_FriendList" pref="394" max="32767" attributes="0"/>
                   </Group>
                   <EmptySpace max="-2" attributes="0"/>
               </Group>
@@ -103,28 +103,28 @@
                           <Component id="jScrollPane1" min="-2" pref="181" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="1" attributes="0">
-                              <Component id="messageInput" min="-2" pref="33" max="-2" attributes="0"/>
-                              <Component id="sendMessageButton" min="-2" pref="33" max="-2" attributes="0"/>
+                              <Component id="jTextField_MessageInput" min="-2" pref="33" max="-2" attributes="0"/>
+                              <Component id="jButton_SendMessage" min="-2" pref="33" max="-2" attributes="0"/>
                           </Group>
                       </Group>
                       <Group type="102" attributes="0">
-                          <Component id="quickGameButton" min="-2" max="-2" attributes="0"/>
+                          <Component id="jButton_QuickGame" min="-2" max="-2" attributes="0"/>
                           <EmptySpace type="separate" max="-2" attributes="0"/>
-                          <Component id="goRoomButton" min="-2" max="-2" attributes="0"/>
+                          <Component id="jButton_GoRoom" min="-2" max="-2" attributes="0"/>
                           <EmptySpace type="separate" max="-2" attributes="0"/>
-                          <Component id="createRoomButton" min="-2" max="-2" attributes="0"/>
+                          <Component id="jButton_CreateRoom" min="-2" max="-2" attributes="0"/>
                           <EmptySpace type="separate" max="-2" attributes="0"/>
-                          <Component id="findRoomButton" min="-2" max="-2" attributes="0"/>
+                          <Component id="jButton_FindRoom" min="-2" max="-2" attributes="0"/>
                           <EmptySpace type="separate" max="-2" attributes="0"/>
-                          <Component id="playWithBotButton" min="-2" max="-2" attributes="0"/>
+                          <Component id="jButton_PlayWithBot" min="-2" max="-2" attributes="0"/>
                           <EmptySpace type="separate" max="-2" attributes="0"/>
-                          <Component id="friendListButton" min="-2" max="-2" attributes="0"/>
+                          <Component id="jButton_FriendList" min="-2" max="-2" attributes="0"/>
                           <EmptySpace type="separate" max="-2" attributes="0"/>
-                          <Component id="scoreBoardButton" min="-2" max="-2" attributes="0"/>
+                          <Component id="jButton_ScoreBoard" min="-2" max="-2" attributes="0"/>
                           <EmptySpace type="separate" max="-2" attributes="0"/>
-                          <Component id="scoreBotButton" min="-2" max="-2" attributes="0"/>
+                          <Component id="jButton_ScoreBot" min="-2" max="-2" attributes="0"/>
                           <EmptySpace type="separate" max="-2" attributes="0"/>
-                          <Component id="exitGameButton" min="-2" max="-2" attributes="0"/>
+                          <Component id="jButton_ExitGame" min="-2" max="-2" attributes="0"/>
                       </Group>
                   </Group>
                   <EmptySpace max="32767" attributes="0"/>
@@ -133,7 +133,7 @@
         </DimensionLayout>
       </Layout>
       <SubComponents>
-        <Component class="javax.swing.JButton" name="quickGameButton">
+        <Component class="javax.swing.JButton" name="jButton_QuickGame">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Tahoma" size="18" style="0"/>
@@ -148,10 +148,10 @@
             </Property>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="quickGameButtonActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton_QuickGameActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JButton" name="goRoomButton">
+        <Component class="javax.swing.JButton" name="jButton_GoRoom">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Tahoma" size="18" style="0"/>
@@ -166,10 +166,10 @@
             </Property>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="goRoomButtonActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton_GoRoomActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JButton" name="createRoomButton">
+        <Component class="javax.swing.JButton" name="jButton_CreateRoom">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Tahoma" size="18" style="0"/>
@@ -184,10 +184,10 @@
             </Property>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="createRoomButtonActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton_CreateRoomActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JButton" name="findRoomButton">
+        <Component class="javax.swing.JButton" name="jButton_FindRoom">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Tahoma" size="18" style="0"/>
@@ -202,10 +202,10 @@
             </Property>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="findRoomButtonActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton_FindRoomActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JButton" name="playWithBotButton">
+        <Component class="javax.swing.JButton" name="jButton_PlayWithBot">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Tahoma" size="18" style="0"/>
@@ -220,10 +220,10 @@
             </Property>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="playWithBotButtonActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton_PlayWithBotActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JButton" name="friendListButton">
+        <Component class="javax.swing.JButton" name="jButton_FriendList">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Tahoma" size="18" style="0"/>
@@ -238,10 +238,10 @@
             </Property>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="friendListButtonActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton_FriendListActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JButton" name="scoreBoardButton">
+        <Component class="javax.swing.JButton" name="jButton_ScoreBoard">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Tahoma" size="18" style="0"/>
@@ -256,10 +256,10 @@
             </Property>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="scoreBoardButtonActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton_ScoreBoardActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JButton" name="scoreBotButton">
+        <Component class="javax.swing.JButton" name="jButton_ScoreBot">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Tahoma" size="18" style="0"/>
@@ -274,10 +274,10 @@
             </Property>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="scoreBotButtonActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton_ScoreBotActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JButton" name="exitGameButton">
+        <Component class="javax.swing.JButton" name="jButton_ExitGame">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Tahoma" size="18" style="0"/>
@@ -292,7 +292,7 @@
             </Property>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="exitGameButtonActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton_ExitGameActionPerformed"/>
           </Events>
         </Component>
         <Container class="javax.swing.JPanel" name="jPanel1">
@@ -314,26 +314,26 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="jLabel8" min="-2" pref="155" max="-2" attributes="0"/>
+                      <Component id="jLabel_Image" min="-2" pref="155" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" attributes="0">
                               <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="numberOfWinLabel" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
-                                  <Component id="numberOfGameLabel" min="-2" pref="95" max="-2" attributes="0"/>
+                                  <Component id="jLabel_NumberOfWin" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLabel_NickName" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLabel_NumberOfGame" min="-2" pref="95" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace type="separate" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Group type="102" attributes="0">
-                                      <Component id="jLabel4" min="-2" max="-2" attributes="0"/>
+                                      <Component id="jLabel_NickNameValue" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace min="26" max="32767" attributes="0"/>
                                   </Group>
                                   <Group type="102" attributes="0">
                                       <Group type="103" groupAlignment="0" attributes="0">
-                                          <Component id="numberOfGameValue" max="32767" attributes="0"/>
+                                          <Component id="jlabel_NumberOfGameValue" max="32767" attributes="0"/>
                                           <Group type="102" attributes="0">
-                                              <Component id="numberOfWinValue" min="-2" max="-2" attributes="0"/>
+                                              <Component id="jLabel_NumberOfWinValue" min="-2" max="-2" attributes="0"/>
                                               <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                                           </Group>
                                       </Group>
@@ -343,17 +343,17 @@
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
                               <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="markLabel" alignment="0" min="-2" pref="34" max="-2" attributes="0"/>
-                                  <Component id="rankLabel" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="winRatioLabel" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="drawLabel" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLabel_Mark" alignment="0" min="-2" pref="34" max="-2" attributes="0"/>
+                                  <Component id="jLabel_Rank" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLabel_WinRatio" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLabel_Draw" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace min="-2" pref="42" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="drawValue" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="winRatioValue" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="markValue" min="-2" max="-2" attributes="0"/>
-                                  <Component id="rankValue" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLabel_DrawValue" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLabel_WinRatioValue" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLabel_MarkValue" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLabel_RankValue" alignment="0" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace max="32767" attributes="0"/>
                           </Group>
@@ -366,46 +366,46 @@
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="1" max="-2" attributes="0">
-                          <Component id="jLabel8" max="32767" attributes="0"/>
+                          <Component id="jLabel_Image" max="32767" attributes="0"/>
                           <Group type="102" attributes="0">
                               <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="jLabel4" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jLabel1" alignment="1" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLabel_NickNameValue" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLabel_NickName" alignment="1" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Group type="102" attributes="0">
                                       <EmptySpace min="-2" pref="11" max="-2" attributes="0"/>
-                                      <Component id="numberOfGameValue" min="-2" max="-2" attributes="0"/>
+                                      <Component id="jlabel_NumberOfGameValue" min="-2" max="-2" attributes="0"/>
                                   </Group>
                                   <Group type="102" alignment="1" attributes="0">
                                       <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="numberOfGameLabel" min="-2" max="-2" attributes="0"/>
+                                      <Component id="jLabel_NumberOfGame" min="-2" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
                               <EmptySpace type="unrelated" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="3" attributes="0">
-                                  <Component id="numberOfWinValue" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="numberOfWinLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLabel_NumberOfWinValue" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLabel_NumberOfWin" alignment="3" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace type="unrelated" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="3" attributes="0">
-                                  <Component id="drawLabel" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="drawValue" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLabel_Draw" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLabel_DrawValue" alignment="3" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace type="unrelated" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="3" attributes="0">
-                                  <Component id="winRatioLabel" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="winRatioValue" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLabel_WinRatio" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLabel_WinRatioValue" alignment="3" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace type="unrelated" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="3" attributes="0">
-                                  <Component id="markValue" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="markLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLabel_MarkValue" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLabel_Mark" alignment="3" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace type="unrelated" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="3" attributes="0">
-                                  <Component id="rankLabel" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="rankValue" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLabel_Rank" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLabel_RankValue" alignment="3" min="-2" max="-2" attributes="0"/>
                               </Group>
                           </Group>
                       </Group>
@@ -415,7 +415,7 @@
             </DimensionLayout>
           </Layout>
           <SubComponents>
-            <Component class="javax.swing.JLabel" name="jLabel1">
+            <Component class="javax.swing.JLabel" name="jLabel_NickName">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Tahoma" size="14" style="0"/>
@@ -426,10 +426,10 @@
                 <Property name="text" type="java.lang.String" value="NickName"/>
               </Properties>
               <Events>
-                <EventHandler event="ancestorMoved" listener="javax.swing.event.AncestorListener" parameters="javax.swing.event.AncestorEvent" handler="jLabel1AncestorMoved"/>
+                <EventHandler event="ancestorMoved" listener="javax.swing.event.AncestorListener" parameters="javax.swing.event.AncestorEvent" handler="jLabel_NickNameAncestorMoved"/>
               </Events>
             </Component>
-            <Component class="javax.swing.JLabel" name="numberOfWinLabel">
+            <Component class="javax.swing.JLabel" name="jLabel_NumberOfWin">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Tahoma" size="14" style="0"/>
@@ -440,7 +440,7 @@
                 <Property name="text" type="java.lang.String" value="S&#x1ed1; v&#xe1;n th&#x1eaf;ng"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JLabel" name="jLabel4">
+            <Component class="javax.swing.JLabel" name="jLabel_NickNameValue">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Tahoma" size="14" style="0"/>
@@ -451,7 +451,7 @@
                 <Property name="text" type="java.lang.String" value="{day la Nick name}"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JLabel" name="numberOfWinValue">
+            <Component class="javax.swing.JLabel" name="jLabel_NumberOfWinValue">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Tahoma" size="14" style="0"/>
@@ -462,7 +462,7 @@
                 <Property name="text" type="java.lang.String" value="{day la so van thang}"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JLabel" name="jLabel8">
+            <Component class="javax.swing.JLabel" name="jLabel_Image">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="cc" green="cc" red="cc" type="rgb"/>
@@ -472,7 +472,7 @@
                 <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value=""/>
               </AuxValues>
             </Component>
-            <Component class="javax.swing.JLabel" name="numberOfGameValue">
+            <Component class="javax.swing.JLabel" name="jlabel_NumberOfGameValue">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Tahoma" size="14" style="0"/>
@@ -483,7 +483,7 @@
                 <Property name="text" type="java.lang.String" value="{day la so van da choi}"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JLabel" name="numberOfGameLabel">
+            <Component class="javax.swing.JLabel" name="jLabel_NumberOfGame">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Tahoma" size="14" style="0"/>
@@ -494,7 +494,7 @@
                 <Property name="text" type="java.lang.String" value="S&#x1ed1; v&#xe1;n &#x111;&#xe3; ch&#x1a1;i"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JLabel" name="markLabel">
+            <Component class="javax.swing.JLabel" name="jLabel_Mark">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Tahoma" size="14" style="0"/>
@@ -505,7 +505,7 @@
                 <Property name="text" type="java.lang.String" value="&#x110;i&#x1ec3;m"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JLabel" name="markValue">
+            <Component class="javax.swing.JLabel" name="jLabel_MarkValue">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Tahoma" size="14" style="0"/>
@@ -516,7 +516,7 @@
                 <Property name="text" type="java.lang.String" value="{day la diem}"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JLabel" name="rankLabel">
+            <Component class="javax.swing.JLabel" name="jLabel_Rank">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Tahoma" size="14" style="0"/>
@@ -527,7 +527,7 @@
                 <Property name="text" type="java.lang.String" value="Th&#x1ee9; h&#x1ea1;ng"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JLabel" name="rankValue">
+            <Component class="javax.swing.JLabel" name="jLabel_RankValue">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Tahoma" size="14" style="0"/>
@@ -538,7 +538,7 @@
                 <Property name="text" type="java.lang.String" value="{day la thu hang}"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JLabel" name="winRatioLabel">
+            <Component class="javax.swing.JLabel" name="jLabel_WinRatio">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Tahoma" size="14" style="0"/>
@@ -549,7 +549,7 @@
                 <Property name="text" type="java.lang.String" value="T&#x1ec9; l&#x1ec7; th&#x1eaf;ng"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JLabel" name="winRatioValue">
+            <Component class="javax.swing.JLabel" name="jLabel_WinRatioValue">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Tahoma" size="14" style="0"/>
@@ -560,7 +560,7 @@
                 <Property name="text" type="java.lang.String" value="{day la ti le thang}"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JLabel" name="drawLabel">
+            <Component class="javax.swing.JLabel" name="jLabel_Draw">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Tahoma" size="14" style="0"/>
@@ -571,7 +571,7 @@
                 <Property name="text" type="java.lang.String" value="S&#x1ed1; v&#xe1;n h&#xf2;a"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JLabel" name="drawValue">
+            <Component class="javax.swing.JLabel" name="jLabel_DrawValue">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Tahoma" size="14" style="0"/>
@@ -591,7 +591,7 @@
 
           <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
           <SubComponents>
-            <Component class="javax.swing.JTextArea" name="messageTextArea">
+            <Component class="javax.swing.JTextArea" name="jTextArea_MessageTextArea">
               <Properties>
                 <Property name="columns" type="int" value="20"/>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
@@ -603,17 +603,17 @@
             </Component>
           </SubComponents>
         </Container>
-        <Component class="javax.swing.JTextField" name="messageInput">
+        <Component class="javax.swing.JTextField" name="jTextField_MessageInput">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Tahoma" size="14" style="0"/>
             </Property>
           </Properties>
           <Events>
-            <EventHandler event="keyPressed" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="messageInputKeyPressed"/>
+            <EventHandler event="keyPressed" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="jTextField_MessageInputKeyPressed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JButton" name="sendMessageButton">
+        <Component class="javax.swing.JButton" name="jButton_SendMessage">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Tahoma" size="14" style="0"/>
@@ -626,7 +626,7 @@
             </Property>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="sendMessageButtonActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton_SendMessageActionPerformed"/>
           </Events>
         </Component>
       </SubComponents>
@@ -641,17 +641,17 @@
       <Layout>
         <DimensionLayout dim="0">
           <Group type="103" groupAlignment="0" attributes="0">
-              <Component id="frameLabel" alignment="1" max="32767" attributes="0"/>
+              <Component id="jLabel_Tittle" alignment="1" max="32767" attributes="0"/>
           </Group>
         </DimensionLayout>
         <DimensionLayout dim="1">
           <Group type="103" groupAlignment="0" attributes="0">
-              <Component id="frameLabel" alignment="1" pref="48" max="32767" attributes="0"/>
+              <Component id="jLabel_Tittle" alignment="1" pref="48" max="32767" attributes="0"/>
           </Group>
         </DimensionLayout>
       </Layout>
       <SubComponents>
-        <Component class="javax.swing.JLabel" name="frameLabel">
+        <Component class="javax.swing.JLabel" name="jLabel_Tittle">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Tahoma" size="36" style="1"/>

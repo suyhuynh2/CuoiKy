@@ -79,7 +79,7 @@ public class CompetitorInfoForm extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
-        frameLabel = new javax.swing.JLabel();
+        jLabel_Tittle = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
         jLabel_Avatar = new javax.swing.JLabel();
@@ -106,11 +106,11 @@ public class CompetitorInfoForm extends javax.swing.JFrame {
         jPanel1.setBackground(new java.awt.Color(255, 255, 204));
         jPanel1.setForeground(new java.awt.Color(102, 102, 102));
 
-        frameLabel.setBackground(new java.awt.Color(0, 0, 0));
-        frameLabel.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        frameLabel.setForeground(new java.awt.Color(0, 0, 0));
-        frameLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        frameLabel.setText("THÔNG TIN ĐỐI THỦ");
+        jLabel_Tittle.setBackground(new java.awt.Color(0, 0, 0));
+        jLabel_Tittle.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        jLabel_Tittle.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel_Tittle.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel_Tittle.setText("THÔNG TIN ĐỐI THỦ");
 
         jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -126,7 +126,7 @@ public class CompetitorInfoForm extends javax.swing.JFrame {
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addComponent(frameLabel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jLabel_Tittle, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
@@ -134,7 +134,7 @@ public class CompetitorInfoForm extends javax.swing.JFrame {
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(frameLabel, javax.swing.GroupLayout.DEFAULT_SIZE, 49, Short.MAX_VALUE)
+                    .addComponent(jLabel_Tittle, javax.swing.GroupLayout.DEFAULT_SIZE, 49, Short.MAX_VALUE)
                     .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addGap(0, 0, Short.MAX_VALUE))
         );
@@ -272,8 +272,7 @@ public class CompetitorInfoForm extends javax.swing.JFrame {
                         .addGap(40, 40, 40))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
                         .addGap(30, 30, 30)
-                        .addComponent(jButton_AddFriend_, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)))
+                        .addComponent(jButton_AddFriend_, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(5, 5, 5)
                 .addComponent(jLabel_IsFriend, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, 0))
@@ -318,7 +317,6 @@ public class CompetitorInfoForm extends javax.swing.JFrame {
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel frameLabel;
     private javax.swing.JButton jButton_AddFriend_;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel_Avatar;
@@ -335,6 +333,7 @@ public class CompetitorInfoForm extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel_NumberOfWinValue;
     private javax.swing.JLabel jLabel_Rank;
     private javax.swing.JLabel jLabel_RankValue;
+    private javax.swing.JLabel jLabel_Tittle;
     private javax.swing.JLabel jLabel_WinRatio;
     private javax.swing.JLabel jLabel_WinRatioValue;
     private javax.swing.JPanel jPanel1;

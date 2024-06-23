@@ -29,7 +29,7 @@ public class RoomNameForm extends javax.swing.JFrame {
         this.setResizable(false);
         this.setDefaultCloseOperation(DISPOSE_ON_CLOSE);
         this.setLocationRelativeTo(null);
-        findingRoomLabel.setVisible(false);
+        jLabel_FindingRoom.setVisible(false);
     }
 
     /**
@@ -42,16 +42,16 @@ public class RoomNameForm extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
-        frameTitle = new javax.swing.JLabel();
+        jLabel_Title = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
-        roomIdLabel = new javax.swing.JLabel();
-        roomIdValue = new javax.swing.JTextField();
-        passwordLabel = new javax.swing.JLabel();
-        passwordValue = new javax.swing.JTextField();
-        passwordNotificationLabl = new javax.swing.JLabel();
-        goToRoomButton = new javax.swing.JButton();
-        findingRoomLabel = new javax.swing.JLabel();
+        jLabel_Room = new javax.swing.JLabel();
+        jTextField_RoomIdValue = new javax.swing.JTextField();
+        jLabel_PasswordLabel = new javax.swing.JLabel();
+        jTextField_PasswordValue = new javax.swing.JTextField();
+        jLabel_PasswordNotification = new javax.swing.JLabel();
+        jButton_GoToRoom = new javax.swing.JButton();
+        jLabel_FindingRoom = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(255, 255, 255));
@@ -59,10 +59,10 @@ public class RoomNameForm extends javax.swing.JFrame {
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 204));
 
-        frameTitle.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        frameTitle.setForeground(new java.awt.Color(0, 0, 0));
-        frameTitle.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        frameTitle.setText("VÀO PHÒNG");
+        jLabel_Title.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        jLabel_Title.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel_Title.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel_Title.setText("VÀO PHÒNG");
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(0, 0, 0));
@@ -79,7 +79,7 @@ public class RoomNameForm extends javax.swing.JFrame {
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addComponent(frameTitle, javax.swing.GroupLayout.PREFERRED_SIZE, 238, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabel_Title, javax.swing.GroupLayout.PREFERRED_SIZE, 238, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, 0)
                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, 0))
@@ -87,64 +87,70 @@ public class RoomNameForm extends javax.swing.JFrame {
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, 48, Short.MAX_VALUE)
-            .addComponent(frameTitle, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jLabel_Title, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         jPanel2.setBackground(new java.awt.Color(255, 255, 255));
 
-        roomIdLabel.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        roomIdLabel.setText("Nhập mã phòng");
+        jLabel_Room.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel_Room.setText("Nhập mã phòng");
 
-        roomIdValue.addActionListener(new java.awt.event.ActionListener() {
+        jTextField_RoomIdValue.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                roomIdValueActionPerformed(evt);
+                jTextField_RoomIdValueActionPerformed(evt);
             }
         });
 
-        passwordLabel.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        passwordLabel.setText("Mật khẩu phòng");
+        jLabel_PasswordLabel.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel_PasswordLabel.setText("Mật khẩu phòng");
 
-        passwordNotificationLabl.setFont(new java.awt.Font("Tahoma", 2, 10)); // NOI18N
-        passwordNotificationLabl.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        passwordNotificationLabl.setText("Nhập mật khẩu nếu có");
-
-        goToRoomButton.setBackground(new java.awt.Color(204, 255, 255));
-        goToRoomButton.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        goToRoomButton.setText("Vào phòng");
-        goToRoomButton.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        goToRoomButton.addActionListener(new java.awt.event.ActionListener() {
+        jTextField_PasswordValue.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                goToRoomButtonActionPerformed(evt);
+                jTextField_PasswordValueActionPerformed(evt);
             }
         });
 
-        findingRoomLabel.setForeground(new java.awt.Color(0, 51, 255));
-        findingRoomLabel.setText("Đang tìm kiếm phòng");
+        jLabel_PasswordNotification.setFont(new java.awt.Font("Tahoma", 2, 10)); // NOI18N
+        jLabel_PasswordNotification.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel_PasswordNotification.setText("Nhập mật khẩu nếu có");
+
+        jButton_GoToRoom.setBackground(new java.awt.Color(204, 255, 255));
+        jButton_GoToRoom.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jButton_GoToRoom.setText("Vào phòng");
+        jButton_GoToRoom.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jButton_GoToRoom.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton_GoToRoomActionPerformed(evt);
+            }
+        });
+
+        jLabel_FindingRoom.setForeground(new java.awt.Color(0, 51, 255));
+        jLabel_FindingRoom.setText("Đang tìm kiếm phòng");
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(passwordNotificationLabl, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jLabel_PasswordNotification, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel2Layout.createSequentialGroup()
                         .addContainerGap()
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(roomIdLabel)
-                            .addComponent(passwordLabel))
+                            .addComponent(jLabel_Room)
+                            .addComponent(jLabel_PasswordLabel))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(passwordValue, javax.swing.GroupLayout.DEFAULT_SIZE, 154, Short.MAX_VALUE)
-                            .addComponent(roomIdValue)))
+                            .addComponent(jTextField_PasswordValue, javax.swing.GroupLayout.DEFAULT_SIZE, 154, Short.MAX_VALUE)
+                            .addComponent(jTextField_RoomIdValue)))
                     .addGroup(jPanel2Layout.createSequentialGroup()
                         .addGap(105, 105, 105)
-                        .addComponent(goToRoomButton, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jButton_GoToRoom, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap())
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addGap(89, 89, 89)
-                .addComponent(findingRoomLabel)
+                .addComponent(jLabel_FindingRoom)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
@@ -152,18 +158,18 @@ public class RoomNameForm extends javax.swing.JFrame {
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(roomIdLabel)
-                    .addComponent(roomIdValue, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jLabel_Room)
+                    .addComponent(jTextField_RoomIdValue, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(passwordLabel)
-                    .addComponent(passwordValue, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jLabel_PasswordLabel)
+                    .addComponent(jTextField_PasswordValue, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(passwordNotificationLabl)
+                .addComponent(jLabel_PasswordNotification)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(goToRoomButton, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jButton_GoToRoom, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(findingRoomLabel)
+                .addComponent(jLabel_FindingRoom)
                 .addGap(16, 16, 16))
         );
 
@@ -172,10 +178,7 @@ public class RoomNameForm extends javax.swing.JFrame {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(0, 0, 0)
-                .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGap(0, 0, 0))
+            .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -189,43 +192,47 @@ public class RoomNameForm extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void roomIdValueActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_roomIdValueActionPerformed
+    private void jTextField_RoomIdValueActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField_RoomIdValueActionPerformed
 
-    }//GEN-LAST:event_roomIdValueActionPerformed
+    }//GEN-LAST:event_jTextField_RoomIdValueActionPerformed
 
-    private void goToRoomButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_goToRoomButtonActionPerformed
-        String roomName = roomIdValue.getText();
+    private void jButton_GoToRoomActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_GoToRoomActionPerformed
+        String roomName = jTextField_RoomIdValue.getText();
         if (roomName.isEmpty()) {
             JOptionPane.showMessageDialog(rootPane, "Vui lòng nhập mã phòng");
             return;
         }
         try {
             String password = " ";
-            if (!passwordValue.getText().isEmpty()) {
-                password = passwordValue.getText();
+            if (!jTextField_PasswordValue.getText().isEmpty()) {
+                password = jTextField_PasswordValue.getText();
             }
             Client.socketHandle.write("go-to-room," + roomName + "," + password);
         } catch (IOException ex) {
             JOptionPane.showMessageDialog(rootPane, ex.getMessage());
         }
-    }//GEN-LAST:event_goToRoomButtonActionPerformed
+    }//GEN-LAST:event_jButton_GoToRoomActionPerformed
 
     private void jLabel1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel1MouseClicked
         Client.closeView(Client.View.ROOM_NAME_FRM);
     }//GEN-LAST:event_jLabel1MouseClicked
 
+    private void jTextField_PasswordValueActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField_PasswordValueActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField_PasswordValueActionPerformed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel findingRoomLabel;
-    private javax.swing.JLabel frameTitle;
-    private javax.swing.JButton goToRoomButton;
+    private javax.swing.JButton jButton_GoToRoom;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel_FindingRoom;
+    private javax.swing.JLabel jLabel_PasswordLabel;
+    private javax.swing.JLabel jLabel_PasswordNotification;
+    private javax.swing.JLabel jLabel_Room;
+    private javax.swing.JLabel jLabel_Title;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
-    private javax.swing.JLabel passwordLabel;
-    private javax.swing.JLabel passwordNotificationLabl;
-    private javax.swing.JTextField passwordValue;
-    private javax.swing.JLabel roomIdLabel;
-    private javax.swing.JTextField roomIdValue;
+    private javax.swing.JTextField jTextField_PasswordValue;
+    private javax.swing.JTextField jTextField_RoomIdValue;
     // End of variables declaration//GEN-END:variables
 }

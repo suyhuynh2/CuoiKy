@@ -56,8 +56,8 @@ public class RegisterForm extends javax.swing.JFrame {
         jPasswordField_Password = new javax.swing.JPasswordField();
         jTextField_NickName = new javax.swing.JTextField();
         jComboBox_Avatar = new javax.swing.JComboBox<>();
-        registerButton = new javax.swing.JButton();
-        registerButton1 = new javax.swing.JButton();
+        jButton_Register = new javax.swing.JButton();
+        jButton_Cancel = new javax.swing.JButton();
         jPanel3 = new javax.swing.JPanel();
         jLabel_Image = new javax.swing.JLabel();
 
@@ -97,25 +97,25 @@ public class RegisterForm extends javax.swing.JFrame {
 
         jTextField_UserName.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
 
-        registerButton.setBackground(new java.awt.Color(204, 255, 255));
-        registerButton.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        registerButton.setText("Đăng kí");
-        registerButton.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        registerButton.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        registerButton.addActionListener(new java.awt.event.ActionListener() {
+        jButton_Register.setBackground(new java.awt.Color(204, 255, 255));
+        jButton_Register.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jButton_Register.setText("Đăng kí");
+        jButton_Register.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jButton_Register.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton_Register.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                registerButtonActionPerformed(evt);
+                jButton_RegisterActionPerformed(evt);
             }
         });
 
-        registerButton1.setBackground(new java.awt.Color(204, 255, 255));
-        registerButton1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        registerButton1.setText("Cancel");
-        registerButton1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        registerButton1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        registerButton1.addActionListener(new java.awt.event.ActionListener() {
+        jButton_Cancel.setBackground(new java.awt.Color(204, 255, 255));
+        jButton_Cancel.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jButton_Cancel.setText("Cancel");
+        jButton_Cancel.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jButton_Cancel.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton_Cancel.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                registerButton1ActionPerformed(evt);
+                jButton_CancelActionPerformed(evt);
             }
         });
 
@@ -140,9 +140,9 @@ public class RegisterForm extends javax.swing.JFrame {
                                 .addComponent(jComboBox_Avatar, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                             .addGroup(jPanel2Layout.createSequentialGroup()
                                 .addGap(28, 28, 28)
-                                .addComponent(registerButton, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(jButton_Register, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(registerButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                                .addComponent(jButton_Cancel, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE))))
                     .addGroup(jPanel2Layout.createSequentialGroup()
                         .addGap(0, 0, Short.MAX_VALUE)
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
@@ -172,8 +172,8 @@ public class RegisterForm extends javax.swing.JFrame {
                     .addComponent(jComboBox_Avatar, javax.swing.GroupLayout.PREFERRED_SIZE, 107, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 49, Short.MAX_VALUE)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(registerButton, javax.swing.GroupLayout.PREFERRED_SIZE, 19, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(registerButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 19, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jButton_Register, javax.swing.GroupLayout.PREFERRED_SIZE, 19, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButton_Cancel, javax.swing.GroupLayout.PREFERRED_SIZE, 19, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(24, 24, 24))
         );
 
@@ -213,7 +213,7 @@ public class RegisterForm extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void registerButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_registerButtonActionPerformed
+    private void jButton_RegisterActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_RegisterActionPerformed
         try {
             String username = jTextField_UserName.getText();
             if (username.isEmpty()) {
@@ -239,16 +239,18 @@ public class RegisterForm extends javax.swing.JFrame {
         } catch (Exception ex) {
             JOptionPane.showMessageDialog(rootPane, ex.getMessage());
         }
-    }//GEN-LAST:event_registerButtonActionPerformed
+    }//GEN-LAST:event_jButton_RegisterActionPerformed
 
-    private void registerButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_registerButton1ActionPerformed
+    private void jButton_CancelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_CancelActionPerformed
         Client.closeView(Client.View.REGISTER);
         Client.openView(Client.View.LOGIN);
-    }//GEN-LAST:event_registerButton1ActionPerformed
+    }//GEN-LAST:event_jButton_CancelActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel framelabel;
+    private javax.swing.JButton jButton_Cancel;
+    private javax.swing.JButton jButton_Register;
     private javax.swing.JComboBox<ImageIcon> jComboBox_Avatar;
     private javax.swing.JLabel jLabel_Avatar;
     private javax.swing.JLabel jLabel_Image;
@@ -261,7 +263,5 @@ public class RegisterForm extends javax.swing.JFrame {
     private javax.swing.JTextField jTextField_NickName;
     private javax.swing.JTextField jTextField_UserName;
     private javax.swing.JLabel nicknameLabel;
-    private javax.swing.JButton registerButton;
-    private javax.swing.JButton registerButton1;
     // End of variables declaration//GEN-END:variables
 }

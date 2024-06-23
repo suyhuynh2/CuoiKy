@@ -28,20 +28,20 @@ public class HomePageForm extends javax.swing.JFrame {
         this.setResizable(false);
         this.setDefaultCloseOperation(EXIT_ON_CLOSE);
         this.setLocationRelativeTo(null);
-        jLabel4.setText(Client.user.getNickname());
-        numberOfWinValue.setText(Integer.toString(Client.user.getNumberOfWin()));
-        numberOfGameValue.setText(Integer.toString(Client.user.getNumberOfGame()));
-        jLabel8.setIcon(new ImageIcon("assets/avatar/" + Client.user.getAvatar() + ".jpg"));
+        jLabel_NickNameValue.setText(Client.user.getNickname());
+        jLabel_NumberOfWinValue.setText(Integer.toString(Client.user.getNumberOfWin()));
+        jlabel_NumberOfGameValue.setText(Integer.toString(Client.user.getNumberOfGame()));
+        jLabel_Image.setIcon(new ImageIcon("assets/avatar/" + Client.user.getAvatar() + ".jpg"));
 //        sendMessageButton.setIcon(new ImageIcon("assets/image/send2.png"));
-        messageTextArea.setEditable(false);
+        jTextArea_MessageTextArea.setEditable(false);
         if (Client.user.getNumberOfGame() == 0) {
-            winRatioValue.setText("-");
+            jLabel_WinRatioValue.setText("-");
         } else {
-            winRatioValue.setText(String.format("%.2f", (float) Client.user.getNumberOfWin() / Client.user.getNumberOfGame() * 100) + "%");
+            jLabel_WinRatioValue.setText(String.format("%.2f", (float) Client.user.getNumberOfWin() / Client.user.getNumberOfGame() * 100) + "%");
         }
-        drawValue.setText("" + Client.user.getNumberOfDraw());
-        markValue.setText("" + (Client.user.getNumberOfGame() + Client.user.getNumberOfWin() * 10));
-        rankValue.setText("" + Client.user.getRank());
+        jLabel_DrawValue.setText("" + Client.user.getNumberOfDraw());
+        jLabel_MarkValue.setText("" + (Client.user.getNumberOfGame() + Client.user.getNumberOfWin() * 10));
+        jLabel_RankValue.setText("" + Client.user.getRank());
     }
 
     /**
@@ -55,37 +55,37 @@ public class HomePageForm extends javax.swing.JFrame {
 
         jLayeredPane1 = new javax.swing.JLayeredPane();
         jPanel2 = new javax.swing.JPanel();
-        quickGameButton = new javax.swing.JButton();
-        goRoomButton = new javax.swing.JButton();
-        createRoomButton = new javax.swing.JButton();
-        findRoomButton = new javax.swing.JButton();
-        playWithBotButton = new javax.swing.JButton();
-        friendListButton = new javax.swing.JButton();
-        scoreBoardButton = new javax.swing.JButton();
-        scoreBotButton = new javax.swing.JButton();
-        exitGameButton = new javax.swing.JButton();
+        jButton_QuickGame = new javax.swing.JButton();
+        jButton_GoRoom = new javax.swing.JButton();
+        jButton_CreateRoom = new javax.swing.JButton();
+        jButton_FindRoom = new javax.swing.JButton();
+        jButton_PlayWithBot = new javax.swing.JButton();
+        jButton_FriendList = new javax.swing.JButton();
+        jButton_ScoreBoard = new javax.swing.JButton();
+        jButton_ScoreBot = new javax.swing.JButton();
+        jButton_ExitGame = new javax.swing.JButton();
         jPanel1 = new javax.swing.JPanel();
-        jLabel1 = new javax.swing.JLabel();
-        numberOfWinLabel = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
-        numberOfWinValue = new javax.swing.JLabel();
-        jLabel8 = new javax.swing.JLabel();
-        numberOfGameValue = new javax.swing.JLabel();
-        numberOfGameLabel = new javax.swing.JLabel();
-        markLabel = new javax.swing.JLabel();
-        markValue = new javax.swing.JLabel();
-        rankLabel = new javax.swing.JLabel();
-        rankValue = new javax.swing.JLabel();
-        winRatioLabel = new javax.swing.JLabel();
-        winRatioValue = new javax.swing.JLabel();
-        drawLabel = new javax.swing.JLabel();
-        drawValue = new javax.swing.JLabel();
+        jLabel_NickName = new javax.swing.JLabel();
+        jLabel_NumberOfWin = new javax.swing.JLabel();
+        jLabel_NickNameValue = new javax.swing.JLabel();
+        jLabel_NumberOfWinValue = new javax.swing.JLabel();
+        jLabel_Image = new javax.swing.JLabel();
+        jlabel_NumberOfGameValue = new javax.swing.JLabel();
+        jLabel_NumberOfGame = new javax.swing.JLabel();
+        jLabel_Mark = new javax.swing.JLabel();
+        jLabel_MarkValue = new javax.swing.JLabel();
+        jLabel_Rank = new javax.swing.JLabel();
+        jLabel_RankValue = new javax.swing.JLabel();
+        jLabel_WinRatio = new javax.swing.JLabel();
+        jLabel_WinRatioValue = new javax.swing.JLabel();
+        jLabel_Draw = new javax.swing.JLabel();
+        jLabel_DrawValue = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
-        messageTextArea = new javax.swing.JTextArea();
-        messageInput = new javax.swing.JTextField();
-        sendMessageButton = new javax.swing.JButton();
+        jTextArea_MessageTextArea = new javax.swing.JTextArea();
+        jTextField_MessageInput = new javax.swing.JTextField();
+        jButton_SendMessage = new javax.swing.JButton();
         jPanel3 = new javax.swing.JPanel();
-        frameLabel = new javax.swing.JLabel();
+        jLabel_Tittle = new javax.swing.JLabel();
 
         javax.swing.GroupLayout jLayeredPane1Layout = new javax.swing.GroupLayout(jLayeredPane1);
         jLayeredPane1.setLayout(jLayeredPane1Layout);
@@ -102,174 +102,174 @@ public class HomePageForm extends javax.swing.JFrame {
 
         jPanel2.setBackground(new java.awt.Color(153, 255, 255));
 
-        quickGameButton.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        quickGameButton.setForeground(new java.awt.Color(255, 51, 51));
-        quickGameButton.setText("Chơi nhanh");
-        quickGameButton.setContentAreaFilled(false);
-        quickGameButton.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        quickGameButton.addActionListener(new java.awt.event.ActionListener() {
+        jButton_QuickGame.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        jButton_QuickGame.setForeground(new java.awt.Color(255, 51, 51));
+        jButton_QuickGame.setText("Chơi nhanh");
+        jButton_QuickGame.setContentAreaFilled(false);
+        jButton_QuickGame.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton_QuickGame.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                quickGameButtonActionPerformed(evt);
+                jButton_QuickGameActionPerformed(evt);
             }
         });
 
-        goRoomButton.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        goRoomButton.setForeground(new java.awt.Color(255, 51, 51));
-        goRoomButton.setText("Vào phòng");
-        goRoomButton.setContentAreaFilled(false);
-        goRoomButton.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        goRoomButton.addActionListener(new java.awt.event.ActionListener() {
+        jButton_GoRoom.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        jButton_GoRoom.setForeground(new java.awt.Color(255, 51, 51));
+        jButton_GoRoom.setText("Vào phòng");
+        jButton_GoRoom.setContentAreaFilled(false);
+        jButton_GoRoom.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton_GoRoom.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                goRoomButtonActionPerformed(evt);
+                jButton_GoRoomActionPerformed(evt);
             }
         });
 
-        createRoomButton.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        createRoomButton.setForeground(new java.awt.Color(255, 51, 51));
-        createRoomButton.setText("Tạo Phòng");
-        createRoomButton.setContentAreaFilled(false);
-        createRoomButton.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        createRoomButton.addActionListener(new java.awt.event.ActionListener() {
+        jButton_CreateRoom.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        jButton_CreateRoom.setForeground(new java.awt.Color(255, 51, 51));
+        jButton_CreateRoom.setText("Tạo Phòng");
+        jButton_CreateRoom.setContentAreaFilled(false);
+        jButton_CreateRoom.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton_CreateRoom.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                createRoomButtonActionPerformed(evt);
+                jButton_CreateRoomActionPerformed(evt);
             }
         });
 
-        findRoomButton.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        findRoomButton.setForeground(new java.awt.Color(255, 51, 51));
-        findRoomButton.setText("Tìm phòng");
-        findRoomButton.setContentAreaFilled(false);
-        findRoomButton.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        findRoomButton.addActionListener(new java.awt.event.ActionListener() {
+        jButton_FindRoom.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        jButton_FindRoom.setForeground(new java.awt.Color(255, 51, 51));
+        jButton_FindRoom.setText("Tìm phòng");
+        jButton_FindRoom.setContentAreaFilled(false);
+        jButton_FindRoom.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton_FindRoom.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                findRoomButtonActionPerformed(evt);
+                jButton_FindRoomActionPerformed(evt);
             }
         });
 
-        playWithBotButton.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        playWithBotButton.setForeground(new java.awt.Color(255, 51, 51));
-        playWithBotButton.setText("Chơi với máy");
-        playWithBotButton.setContentAreaFilled(false);
-        playWithBotButton.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        playWithBotButton.addActionListener(new java.awt.event.ActionListener() {
+        jButton_PlayWithBot.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        jButton_PlayWithBot.setForeground(new java.awt.Color(255, 51, 51));
+        jButton_PlayWithBot.setText("Chơi với máy");
+        jButton_PlayWithBot.setContentAreaFilled(false);
+        jButton_PlayWithBot.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton_PlayWithBot.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                playWithBotButtonActionPerformed(evt);
+                jButton_PlayWithBotActionPerformed(evt);
             }
         });
 
-        friendListButton.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        friendListButton.setForeground(new java.awt.Color(255, 51, 51));
-        friendListButton.setText("Danh sách bạn bè");
-        friendListButton.setContentAreaFilled(false);
-        friendListButton.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        friendListButton.addActionListener(new java.awt.event.ActionListener() {
+        jButton_FriendList.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        jButton_FriendList.setForeground(new java.awt.Color(255, 51, 51));
+        jButton_FriendList.setText("Danh sách bạn bè");
+        jButton_FriendList.setContentAreaFilled(false);
+        jButton_FriendList.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton_FriendList.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                friendListButtonActionPerformed(evt);
+                jButton_FriendListActionPerformed(evt);
             }
         });
 
-        scoreBoardButton.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        scoreBoardButton.setForeground(new java.awt.Color(255, 51, 51));
-        scoreBoardButton.setText("Bảng xếp hạng");
-        scoreBoardButton.setContentAreaFilled(false);
-        scoreBoardButton.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        scoreBoardButton.addActionListener(new java.awt.event.ActionListener() {
+        jButton_ScoreBoard.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        jButton_ScoreBoard.setForeground(new java.awt.Color(255, 51, 51));
+        jButton_ScoreBoard.setText("Bảng xếp hạng");
+        jButton_ScoreBoard.setContentAreaFilled(false);
+        jButton_ScoreBoard.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton_ScoreBoard.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                scoreBoardButtonActionPerformed(evt);
+                jButton_ScoreBoardActionPerformed(evt);
             }
         });
 
-        scoreBotButton.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        scoreBotButton.setForeground(new java.awt.Color(255, 51, 51));
-        scoreBotButton.setText("Đăng xuất");
-        scoreBotButton.setContentAreaFilled(false);
-        scoreBotButton.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        scoreBotButton.addActionListener(new java.awt.event.ActionListener() {
+        jButton_ScoreBot.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        jButton_ScoreBot.setForeground(new java.awt.Color(255, 51, 51));
+        jButton_ScoreBot.setText("Đăng xuất");
+        jButton_ScoreBot.setContentAreaFilled(false);
+        jButton_ScoreBot.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton_ScoreBot.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                scoreBotButtonActionPerformed(evt);
+                jButton_ScoreBotActionPerformed(evt);
             }
         });
 
-        exitGameButton.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        exitGameButton.setForeground(new java.awt.Color(255, 51, 51));
-        exitGameButton.setText("Thoát Game");
-        exitGameButton.setContentAreaFilled(false);
-        exitGameButton.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        exitGameButton.addActionListener(new java.awt.event.ActionListener() {
+        jButton_ExitGame.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        jButton_ExitGame.setForeground(new java.awt.Color(255, 51, 51));
+        jButton_ExitGame.setText("Thoát Game");
+        jButton_ExitGame.setContentAreaFilled(false);
+        jButton_ExitGame.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton_ExitGame.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                exitGameButtonActionPerformed(evt);
+                jButton_ExitGameActionPerformed(evt);
             }
         });
 
         jPanel1.setBackground(new java.awt.Color(153, 255, 255));
         jPanel1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(153, 153, 153), 5));
 
-        jLabel1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(0, 0, 0));
-        jLabel1.setText("NickName");
-        jLabel1.addAncestorListener(new javax.swing.event.AncestorListener() {
+        jLabel_NickName.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel_NickName.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel_NickName.setText("NickName");
+        jLabel_NickName.addAncestorListener(new javax.swing.event.AncestorListener() {
             public void ancestorAdded(javax.swing.event.AncestorEvent evt) {
             }
             public void ancestorMoved(javax.swing.event.AncestorEvent evt) {
-                jLabel1AncestorMoved(evt);
+                jLabel_NickNameAncestorMoved(evt);
             }
             public void ancestorRemoved(javax.swing.event.AncestorEvent evt) {
             }
         });
 
-        numberOfWinLabel.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        numberOfWinLabel.setForeground(new java.awt.Color(0, 0, 0));
-        numberOfWinLabel.setText("Số ván thắng");
+        jLabel_NumberOfWin.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel_NumberOfWin.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel_NumberOfWin.setText("Số ván thắng");
 
-        jLabel4.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jLabel4.setForeground(new java.awt.Color(0, 0, 0));
-        jLabel4.setText("{day la Nick name}");
+        jLabel_NickNameValue.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel_NickNameValue.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel_NickNameValue.setText("{day la Nick name}");
 
-        numberOfWinValue.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        numberOfWinValue.setForeground(new java.awt.Color(0, 0, 0));
-        numberOfWinValue.setText("{day la so van thang}");
+        jLabel_NumberOfWinValue.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel_NumberOfWinValue.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel_NumberOfWinValue.setText("{day la so van thang}");
 
-        jLabel8.setBackground(new java.awt.Color(204, 204, 204));
+        jLabel_Image.setBackground(new java.awt.Color(204, 204, 204));
 
-        numberOfGameValue.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        numberOfGameValue.setForeground(new java.awt.Color(0, 0, 0));
-        numberOfGameValue.setText("{day la so van da choi}");
+        jlabel_NumberOfGameValue.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jlabel_NumberOfGameValue.setForeground(new java.awt.Color(0, 0, 0));
+        jlabel_NumberOfGameValue.setText("{day la so van da choi}");
 
-        numberOfGameLabel.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        numberOfGameLabel.setForeground(new java.awt.Color(0, 0, 0));
-        numberOfGameLabel.setText("Số ván đã chơi");
+        jLabel_NumberOfGame.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel_NumberOfGame.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel_NumberOfGame.setText("Số ván đã chơi");
 
-        markLabel.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        markLabel.setForeground(new java.awt.Color(0, 0, 0));
-        markLabel.setText("Điểm");
+        jLabel_Mark.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel_Mark.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel_Mark.setText("Điểm");
 
-        markValue.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        markValue.setForeground(new java.awt.Color(0, 0, 0));
-        markValue.setText("{day la diem}");
+        jLabel_MarkValue.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel_MarkValue.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel_MarkValue.setText("{day la diem}");
 
-        rankLabel.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        rankLabel.setForeground(new java.awt.Color(0, 0, 0));
-        rankLabel.setText("Thứ hạng");
+        jLabel_Rank.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel_Rank.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel_Rank.setText("Thứ hạng");
 
-        rankValue.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        rankValue.setForeground(new java.awt.Color(0, 0, 0));
-        rankValue.setText("{day la thu hang}");
+        jLabel_RankValue.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel_RankValue.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel_RankValue.setText("{day la thu hang}");
 
-        winRatioLabel.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        winRatioLabel.setForeground(new java.awt.Color(0, 0, 0));
-        winRatioLabel.setText("Tỉ lệ thắng");
+        jLabel_WinRatio.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel_WinRatio.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel_WinRatio.setText("Tỉ lệ thắng");
 
-        winRatioValue.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        winRatioValue.setForeground(new java.awt.Color(0, 0, 0));
-        winRatioValue.setText("{day la ti le thang}");
+        jLabel_WinRatioValue.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel_WinRatioValue.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel_WinRatioValue.setText("{day la ti le thang}");
 
-        drawLabel.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        drawLabel.setForeground(new java.awt.Color(0, 0, 0));
-        drawLabel.setText("Số ván hòa");
+        jLabel_Draw.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel_Draw.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel_Draw.setText("Số ván hòa");
 
-        drawValue.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        drawValue.setForeground(new java.awt.Color(0, 0, 0));
-        drawValue.setText("{day la so van hoa}");
+        jLabel_DrawValue.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel_DrawValue.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel_DrawValue.setText("{day la so van hoa}");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -277,38 +277,38 @@ public class HomePageForm extends javax.swing.JFrame {
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 155, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabel_Image, javax.swing.GroupLayout.PREFERRED_SIZE, 155, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(numberOfWinLabel)
-                            .addComponent(jLabel1)
-                            .addComponent(numberOfGameLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 95, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(jLabel_NumberOfWin)
+                            .addComponent(jLabel_NickName)
+                            .addComponent(jLabel_NumberOfGame, javax.swing.GroupLayout.PREFERRED_SIZE, 95, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(18, 18, 18)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(jLabel4)
+                                .addComponent(jLabel_NickNameValue)
                                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(numberOfGameValue, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(jlabel_NumberOfGameValue, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                     .addGroup(jPanel1Layout.createSequentialGroup()
-                                        .addComponent(numberOfWinValue)
+                                        .addComponent(jLabel_NumberOfWinValue)
                                         .addGap(0, 0, Short.MAX_VALUE)))
                                 .addContainerGap())))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(markLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(rankLabel)
-                            .addComponent(winRatioLabel)
-                            .addComponent(drawLabel))
+                            .addComponent(jLabel_Mark, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel_Rank)
+                            .addComponent(jLabel_WinRatio)
+                            .addComponent(jLabel_Draw))
                         .addGap(42, 42, 42)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(drawValue)
-                            .addComponent(winRatioValue)
-                            .addComponent(markValue)
-                            .addComponent(rankValue))
+                            .addComponent(jLabel_DrawValue)
+                            .addComponent(jLabel_WinRatioValue)
+                            .addComponent(jLabel_MarkValue)
+                            .addComponent(jLabel_RankValue))
                         .addContainerGap())))
         );
         jPanel1Layout.setVerticalGroup(
@@ -316,60 +316,60 @@ public class HomePageForm extends javax.swing.JFrame {
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                    .addComponent(jLabel8, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jLabel_Image, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel4)
-                            .addComponent(jLabel1, javax.swing.GroupLayout.Alignment.TRAILING))
+                            .addComponent(jLabel_NickNameValue)
+                            .addComponent(jLabel_NickName, javax.swing.GroupLayout.Alignment.TRAILING))
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addGap(11, 11, 11)
-                                .addComponent(numberOfGameValue))
+                                .addComponent(jlabel_NumberOfGameValue))
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(numberOfGameLabel)))
+                                .addComponent(jLabel_NumberOfGame)))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(numberOfWinValue)
-                            .addComponent(numberOfWinLabel))
+                            .addComponent(jLabel_NumberOfWinValue)
+                            .addComponent(jLabel_NumberOfWin))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(drawLabel)
-                            .addComponent(drawValue))
+                            .addComponent(jLabel_Draw)
+                            .addComponent(jLabel_DrawValue))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(winRatioLabel)
-                            .addComponent(winRatioValue))
+                            .addComponent(jLabel_WinRatio)
+                            .addComponent(jLabel_WinRatioValue))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(markValue)
-                            .addComponent(markLabel))
+                            .addComponent(jLabel_MarkValue)
+                            .addComponent(jLabel_Mark))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(rankLabel)
-                            .addComponent(rankValue))))
+                            .addComponent(jLabel_Rank)
+                            .addComponent(jLabel_RankValue))))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        messageTextArea.setColumns(20);
-        messageTextArea.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        messageTextArea.setRows(5);
-        messageTextArea.setText("<<Tin nhắn và tin tức>>\n");
-        jScrollPane1.setViewportView(messageTextArea);
+        jTextArea_MessageTextArea.setColumns(20);
+        jTextArea_MessageTextArea.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jTextArea_MessageTextArea.setRows(5);
+        jTextArea_MessageTextArea.setText("<<Tin nhắn và tin tức>>\n");
+        jScrollPane1.setViewportView(jTextArea_MessageTextArea);
 
-        messageInput.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        messageInput.addKeyListener(new java.awt.event.KeyAdapter() {
+        jTextField_MessageInput.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jTextField_MessageInput.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
-                messageInputKeyPressed(evt);
+                jTextField_MessageInputKeyPressed(evt);
             }
         });
 
-        sendMessageButton.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        sendMessageButton.setText("Gửi");
-        sendMessageButton.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        sendMessageButton.addActionListener(new java.awt.event.ActionListener() {
+        jButton_SendMessage.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jButton_SendMessage.setText("Gửi");
+        jButton_SendMessage.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jButton_SendMessage.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                sendMessageButtonActionPerformed(evt);
+                jButton_SendMessageActionPerformed(evt);
             }
         });
 
@@ -381,22 +381,22 @@ public class HomePageForm extends javax.swing.JFrame {
                 .addContainerGap()
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                        .addComponent(messageInput, javax.swing.GroupLayout.PREFERRED_SIZE, 377, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jTextField_MessageInput, javax.swing.GroupLayout.PREFERRED_SIZE, 377, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(sendMessageButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addComponent(jButton_SendMessage, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                     .addComponent(jScrollPane1)
                     .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(quickGameButton, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(goRoomButton, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(createRoomButton, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(findRoomButton, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(scoreBoardButton, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(scoreBotButton, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(exitGameButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(playWithBotButton, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(friendListButton, javax.swing.GroupLayout.DEFAULT_SIZE, 394, Short.MAX_VALUE))
+                    .addComponent(jButton_QuickGame, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jButton_GoRoom, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jButton_CreateRoom, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jButton_FindRoom, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jButton_ScoreBoard, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jButton_ScoreBot, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jButton_ExitGame, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jButton_PlayWithBot, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jButton_FriendList, javax.swing.GroupLayout.DEFAULT_SIZE, 394, Short.MAX_VALUE))
                 .addContainerGap())
         );
         jPanel2Layout.setVerticalGroup(
@@ -410,44 +410,44 @@ public class HomePageForm extends javax.swing.JFrame {
                         .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 181, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(messageInput, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(sendMessageButton, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addComponent(jTextField_MessageInput, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jButton_SendMessage, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addComponent(quickGameButton)
+                        .addComponent(jButton_QuickGame)
                         .addGap(18, 18, 18)
-                        .addComponent(goRoomButton)
+                        .addComponent(jButton_GoRoom)
                         .addGap(18, 18, 18)
-                        .addComponent(createRoomButton)
+                        .addComponent(jButton_CreateRoom)
                         .addGap(18, 18, 18)
-                        .addComponent(findRoomButton)
+                        .addComponent(jButton_FindRoom)
                         .addGap(18, 18, 18)
-                        .addComponent(playWithBotButton)
+                        .addComponent(jButton_PlayWithBot)
                         .addGap(18, 18, 18)
-                        .addComponent(friendListButton)
+                        .addComponent(jButton_FriendList)
                         .addGap(18, 18, 18)
-                        .addComponent(scoreBoardButton)
+                        .addComponent(jButton_ScoreBoard)
                         .addGap(18, 18, 18)
-                        .addComponent(scoreBotButton)
+                        .addComponent(jButton_ScoreBot)
                         .addGap(18, 18, 18)
-                        .addComponent(exitGameButton)))
+                        .addComponent(jButton_ExitGame)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         jPanel3.setBackground(new java.awt.Color(255, 255, 204));
 
-        frameLabel.setFont(new java.awt.Font("Tahoma", 1, 36)); // NOI18N
-        frameLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        frameLabel.setText("GAME CARO");
+        jLabel_Tittle.setFont(new java.awt.Font("Tahoma", 1, 36)); // NOI18N
+        jLabel_Tittle.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel_Tittle.setText("GAME CARO");
 
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
         jPanel3Layout.setHorizontalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(frameLabel, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jLabel_Tittle, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(frameLabel, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 48, Short.MAX_VALUE)
+            .addComponent(jLabel_Tittle, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 48, Short.MAX_VALUE)
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -468,11 +468,11 @@ public class HomePageForm extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jLabel1AncestorMoved(javax.swing.event.AncestorEvent evt) {//GEN-FIRST:event_jLabel1AncestorMoved
+    private void jLabel_NickNameAncestorMoved(javax.swing.event.AncestorEvent evt) {//GEN-FIRST:event_jLabel_NickNameAncestorMoved
         // TODO add your handling code here:
-    }//GEN-LAST:event_jLabel1AncestorMoved
+    }//GEN-LAST:event_jLabel_NickNameAncestorMoved
 
-    private void createRoomButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_createRoomButtonActionPerformed
+    private void jButton_CreateRoomActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_CreateRoomActionPerformed
         int res = JOptionPane.showConfirmDialog(rootPane, "Bạn có muốn đặt mật khẩu cho phòng không?", "Tạo phòng", JOptionPane.YES_NO_OPTION);
         if (res == JOptionPane.YES_OPTION) {
             Client.closeView(Client.View.HOMEPAGE);
@@ -485,9 +485,9 @@ public class HomePageForm extends javax.swing.JFrame {
                 JOptionPane.showMessageDialog(rootPane, ex.getMessage());
             }
         }
-    }//GEN-LAST:event_createRoomButtonActionPerformed
+    }//GEN-LAST:event_jButton_CreateRoomActionPerformed
 
-    private void findRoomButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_findRoomButtonActionPerformed
+    private void jButton_FindRoomActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_FindRoomActionPerformed
         try {
             Client.closeView(Client.View.HOMEPAGE);
             Client.openView(Client.View.ROOM_LIST);
@@ -495,13 +495,13 @@ public class HomePageForm extends javax.swing.JFrame {
         } catch (IOException ex) {
             JOptionPane.showMessageDialog(rootPane, ex.getMessage());
         }
-    }//GEN-LAST:event_findRoomButtonActionPerformed
+    }//GEN-LAST:event_jButton_FindRoomActionPerformed
 
-    private void scoreBoardButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_scoreBoardButtonActionPerformed
+    private void jButton_ScoreBoardActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_ScoreBoardActionPerformed
         Client.openView(Client.View.RANK);
-    }//GEN-LAST:event_scoreBoardButtonActionPerformed
+    }//GEN-LAST:event_jButton_ScoreBoardActionPerformed
 
-    private void scoreBotButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_scoreBotButtonActionPerformed
+    private void jButton_ScoreBotActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_ScoreBotActionPerformed
         try {
             Client.socketHandle.write("offline," + Client.user.getID());
         } catch (IOException ex) {
@@ -509,97 +509,97 @@ public class HomePageForm extends javax.swing.JFrame {
         }
         Client.closeView(Client.View.HOMEPAGE);
         Client.openView(Client.View.LOGIN);
-    }//GEN-LAST:event_scoreBotButtonActionPerformed
+    }//GEN-LAST:event_jButton_ScoreBotActionPerformed
 
-    private void exitGameButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_exitGameButtonActionPerformed
+    private void jButton_ExitGameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_ExitGameActionPerformed
         this.dispatchEvent(new WindowEvent(this, WindowEvent.WINDOW_CLOSING));
-    }//GEN-LAST:event_exitGameButtonActionPerformed
+    }//GEN-LAST:event_jButton_ExitGameActionPerformed
 
-    private void friendListButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_friendListButtonActionPerformed
+    private void jButton_FriendListActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_FriendListActionPerformed
         Client.closeView(Client.View.HOMEPAGE);
         Client.openView(Client.View.FRIEND_LIST);
-    }//GEN-LAST:event_friendListButtonActionPerformed
+    }//GEN-LAST:event_jButton_FriendListActionPerformed
 
-    private void quickGameButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_quickGameButtonActionPerformed
+    private void jButton_QuickGameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_QuickGameActionPerformed
         Client.closeView(Client.View.HOMEPAGE);
         Client.openView(Client.View.FIND_ROOM);
-    }//GEN-LAST:event_quickGameButtonActionPerformed
+    }//GEN-LAST:event_jButton_QuickGameActionPerformed
 
-    private void playWithBotButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_playWithBotButtonActionPerformed
+    private void jButton_PlayWithBotActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_PlayWithBotActionPerformed
         // TODO add your handling code here:
         Client.openView(Client.View.GAME_AI);
-    }//GEN-LAST:event_playWithBotButtonActionPerformed
+    }//GEN-LAST:event_jButton_PlayWithBotActionPerformed
 
-    private void goRoomButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_goRoomButtonActionPerformed
+    private void jButton_GoRoomActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_GoRoomActionPerformed
         Client.openView(Client.View.ROOM_NAME_FRM);
-    }//GEN-LAST:event_goRoomButtonActionPerformed
+    }//GEN-LAST:event_jButton_GoRoomActionPerformed
 
-    private void sendMessageButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sendMessageButtonActionPerformed
+    private void jButton_SendMessageActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_SendMessageActionPerformed
         sendMessage();
-    }//GEN-LAST:event_sendMessageButtonActionPerformed
+    }//GEN-LAST:event_jButton_SendMessageActionPerformed
 
-    private void messageInputKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_messageInputKeyPressed
+    private void jTextField_MessageInputKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField_MessageInputKeyPressed
         if (evt.getKeyCode() == 10) {
             sendMessage();
         }
-    }//GEN-LAST:event_messageInputKeyPressed
+    }//GEN-LAST:event_jTextField_MessageInputKeyPressed
 
     private void sendMessage() {
         try {
-            if (messageInput.getText().isEmpty()) {
+            if (jTextField_MessageInput.getText().isEmpty()) {
                 throw new Exception("Vui lòng nhập nội dung tin nhắn");
             }
-            String temp = messageTextArea.getText();
-            temp += "Tôi: " + messageInput.getText() + "\n";
-            messageTextArea.setText(temp);
-            Client.socketHandle.write("chat-server," + messageInput.getText());
-            messageInput.setText("");
-            messageTextArea.setCaretPosition(messageTextArea.getDocument().getLength());
+            String temp = jTextArea_MessageTextArea.getText();
+            temp += "Tôi: " + jTextField_MessageInput.getText() + "\n";
+            jTextArea_MessageTextArea.setText(temp);
+            Client.socketHandle.write("chat-server," + jTextField_MessageInput.getText());
+            jTextField_MessageInput.setText("");
+            jTextArea_MessageTextArea.setCaretPosition(jTextArea_MessageTextArea.getDocument().getLength());
         } catch (Exception ex) {
             JOptionPane.showMessageDialog(rootPane, ex.getMessage());
         }
     }
 
     public void addMessage(String message) {
-        String temp = messageTextArea.getText();
+        String temp = jTextArea_MessageTextArea.getText();
         temp += message + "\n";
-        messageTextArea.setText(temp);
-        messageTextArea.setCaretPosition(messageTextArea.getDocument().getLength());
+        jTextArea_MessageTextArea.setText(temp);
+        jTextArea_MessageTextArea.setCaretPosition(jTextArea_MessageTextArea.getDocument().getLength());
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton createRoomButton;
-    private javax.swing.JLabel drawLabel;
-    private javax.swing.JLabel drawValue;
-    private javax.swing.JButton exitGameButton;
-    private javax.swing.JButton findRoomButton;
-    private javax.swing.JLabel frameLabel;
-    private javax.swing.JButton friendListButton;
-    private javax.swing.JButton goRoomButton;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel8;
+    private javax.swing.JButton jButton_CreateRoom;
+    private javax.swing.JButton jButton_ExitGame;
+    private javax.swing.JButton jButton_FindRoom;
+    private javax.swing.JButton jButton_FriendList;
+    private javax.swing.JButton jButton_GoRoom;
+    private javax.swing.JButton jButton_PlayWithBot;
+    private javax.swing.JButton jButton_QuickGame;
+    private javax.swing.JButton jButton_ScoreBoard;
+    private javax.swing.JButton jButton_ScoreBot;
+    private javax.swing.JButton jButton_SendMessage;
+    private javax.swing.JLabel jLabel_Draw;
+    private javax.swing.JLabel jLabel_DrawValue;
+    private javax.swing.JLabel jLabel_Image;
+    private javax.swing.JLabel jLabel_Mark;
+    private javax.swing.JLabel jLabel_MarkValue;
+    private javax.swing.JLabel jLabel_NickName;
+    private javax.swing.JLabel jLabel_NickNameValue;
+    private javax.swing.JLabel jLabel_NumberOfGame;
+    private javax.swing.JLabel jLabel_NumberOfWin;
+    private javax.swing.JLabel jLabel_NumberOfWinValue;
+    private javax.swing.JLabel jLabel_Rank;
+    private javax.swing.JLabel jLabel_RankValue;
+    private javax.swing.JLabel jLabel_Tittle;
+    private javax.swing.JLabel jLabel_WinRatio;
+    private javax.swing.JLabel jLabel_WinRatioValue;
     private javax.swing.JLayeredPane jLayeredPane1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JLabel markLabel;
-    private javax.swing.JLabel markValue;
-    private javax.swing.JTextField messageInput;
-    private javax.swing.JTextArea messageTextArea;
-    private javax.swing.JLabel numberOfGameLabel;
-    private javax.swing.JLabel numberOfGameValue;
-    private javax.swing.JLabel numberOfWinLabel;
-    private javax.swing.JLabel numberOfWinValue;
-    private javax.swing.JButton playWithBotButton;
-    private javax.swing.JButton quickGameButton;
-    private javax.swing.JLabel rankLabel;
-    private javax.swing.JLabel rankValue;
-    private javax.swing.JButton scoreBoardButton;
-    private javax.swing.JButton scoreBotButton;
-    private javax.swing.JButton sendMessageButton;
-    private javax.swing.JLabel winRatioLabel;
-    private javax.swing.JLabel winRatioValue;
+    private javax.swing.JTextArea jTextArea_MessageTextArea;
+    private javax.swing.JTextField jTextField_MessageInput;
+    private javax.swing.JLabel jlabel_NumberOfGameValue;
     // End of variables declaration//GEN-END:variables
 }

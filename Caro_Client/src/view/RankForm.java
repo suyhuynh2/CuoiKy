@@ -30,7 +30,7 @@ public class RankForm extends javax.swing.JFrame {
     public RankForm() {
         initComponents();
         this.setTitle("Caro Game Nhóm 5");
-        tableModel = (DefaultTableModel) rankTextArea.getModel();
+        tableModel = (DefaultTableModel) jTable_RankTextArea.getModel();
         this.setIconImage(new ImageIcon("assets/image/caroicon.png").getImage());
         this.setResizable(false);
         this.setDefaultCloseOperation(DISPOSE_ON_CLOSE);
@@ -74,7 +74,7 @@ public class RankForm extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
-        frameLabel = new javax.swing.JLabel();
+        jLabel_Tittle = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
         Object[][] rows = {
         };
@@ -90,7 +90,7 @@ public class RankForm extends javax.swing.JFrame {
                 }
             }
         };
-        rankTextArea = new javax.swing.JTable();
+        jTable_RankTextArea = new javax.swing.JTable();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -99,21 +99,21 @@ public class RankForm extends javax.swing.JFrame {
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 204));
 
-        frameLabel.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        frameLabel.setForeground(new java.awt.Color(0, 0, 0));
-        frameLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        frameLabel.setText("BẢNG XẾP HẠNG");
+        jLabel_Tittle.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        jLabel_Tittle.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel_Tittle.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel_Tittle.setText("BẢNG XẾP HẠNG");
 
-        rankTextArea.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        rankTextArea.setModel(model);
-        rankTextArea.setFillsViewportHeight(true);
-        rankTextArea.setRowHeight(62);
-        rankTextArea.addMouseListener(new java.awt.event.MouseAdapter() {
+        jTable_RankTextArea.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jTable_RankTextArea.setModel(model);
+        jTable_RankTextArea.setFillsViewportHeight(true);
+        jTable_RankTextArea.setRowHeight(62);
+        jTable_RankTextArea.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                rankTextAreaMouseClicked(evt);
+                jTable_RankTextAreaMouseClicked(evt);
             }
         });
-        jScrollPane1.setViewportView(rankTextArea);
+        jScrollPane1.setViewportView(jTable_RankTextArea);
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -129,7 +129,7 @@ public class RankForm extends javax.swing.JFrame {
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addComponent(frameLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 308, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabel_Tittle, javax.swing.GroupLayout.PREFERRED_SIZE, 308, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, Short.MAX_VALUE))
@@ -142,7 +142,7 @@ public class RankForm extends javax.swing.JFrame {
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(frameLabel, javax.swing.GroupLayout.DEFAULT_SIZE, 50, Short.MAX_VALUE)
+                    .addComponent(jLabel_Tittle, javax.swing.GroupLayout.DEFAULT_SIZE, 50, Short.MAX_VALUE)
                     .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addGap(3, 3, 3)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 531, Short.MAX_VALUE)
@@ -163,15 +163,15 @@ public class RankForm extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void rankTextAreaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_rankTextAreaMouseClicked
-        if (rankTextArea.getSelectedRow() == -1)
+    private void jTable_RankTextAreaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTable_RankTextAreaMouseClicked
+        if (jTable_RankTextArea.getSelectedRow() == -1)
             return;
-        if (listUserStatics.get(rankTextArea.getSelectedRow()).getID() == Client.user.getID()) {
-            JOptionPane.showMessageDialog(rootPane, "Thứ hạng của bạn là " + (rankTextArea.getSelectedRow() + 1));
+        if (listUserStatics.get(jTable_RankTextArea.getSelectedRow()).getID() == Client.user.getID()) {
+            JOptionPane.showMessageDialog(rootPane, "Thứ hạng của bạn là " + (jTable_RankTextArea.getSelectedRow() + 1));
             return;
         }
-        Client.openView(Client.View.COMPETITOR_INFO, listUserStatics.get(rankTextArea.getSelectedRow()));
-    }//GEN-LAST:event_rankTextAreaMouseClicked
+        Client.openView(Client.View.COMPETITOR_INFO, listUserStatics.get(jTable_RankTextArea.getSelectedRow()));
+    }//GEN-LAST:event_jTable_RankTextAreaMouseClicked
 
     private void jLabel1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel1MouseClicked
        Client.closeView(Client.View.RANK);
@@ -179,10 +179,10 @@ public class RankForm extends javax.swing.JFrame {
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel frameLabel;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel_Tittle;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTable rankTextArea;
+    private javax.swing.JTable jTable_RankTextArea;
     // End of variables declaration//GEN-END:variables
 }

@@ -22,7 +22,7 @@ public class UserDAO extends DAO {
     public UserDAO() {
         super();
     }
-
+// Xác minh thông tin đăng nhập
     public User verifyUser(User user) {
         try {
             PreparedStatement preparedStatement = con.prepareStatement("SELECT *\n"
@@ -53,6 +53,7 @@ public class UserDAO extends DAO {
         return null;
     }
 
+// Thêm thông tin User
     public void addUser(User user) {
         try {
             PreparedStatement preparedStatement = con.prepareStatement("INSERT INTO user(username, password, nickname, avatar)\n"
@@ -68,6 +69,7 @@ public class UserDAO extends DAO {
         }
     }
 
+// Kiểm tra tên đăng nhập đã tồn tại chưa
     public boolean checkDuplicated(String username) {
         try {
             PreparedStatement preparedStatement = con.prepareStatement("SELECT * FROM user WHERE username = ?");
@@ -84,6 +86,7 @@ public class UserDAO extends DAO {
         return false;
     }
 
+// Kiểm tra user có bị nằm trong danh sách ban không
     public boolean checkIsBanned(User user) {
         try {
             PreparedStatement preparedStatement = con.prepareStatement("SELECT * FROM banned_user WHERE ID_User = ?");
@@ -100,6 +103,7 @@ public class UserDAO extends DAO {
         return false;
     }
 
+// Cập nhật lại trạng thái ban
     public void updateBannedStatus(User user, boolean ban) {
         try {
             PreparedStatement preparedStatement1 = con.prepareStatement("INSERT INTO `banned_user`(`ID_User`) VALUES (?)");
@@ -116,6 +120,7 @@ public class UserDAO extends DAO {
         }
     }
 
+// Cập nhật user đang online
     public void updateToOnline(int ID) {
         try {
             PreparedStatement preparedStatement = con.prepareStatement("UPDATE user\n"
@@ -129,6 +134,7 @@ public class UserDAO extends DAO {
         }
     }
 
+// Cập nhật user đang offline
     public void updateToOffline(int ID) {
         try {
             PreparedStatement preparedStatement = con.prepareStatement("UPDATE user\n"
@@ -142,6 +148,7 @@ public class UserDAO extends DAO {
         }
     }
 
+// Cập nhật user đang chơi
     public void updateToPlaying(int ID) {
         try {
             PreparedStatement preparedStatement = con.prepareStatement("UPDATE user\n"
@@ -155,6 +162,7 @@ public class UserDAO extends DAO {
         }
     }
 
+// Cập nhật user không chơi
     public void updateToNotPlaying(int ID) {
         try {
             PreparedStatement preparedStatement = con.prepareStatement("UPDATE user\n"
@@ -168,6 +176,7 @@ public class UserDAO extends DAO {
         }
     }
 
+// Danh sách bạn bè theo trạng thái trực tuyến và đang chơi của bạn bè
     public List<User> getListFriend(int ID) {
         List<User> ListFriend = new ArrayList<>();
         try {
@@ -211,6 +220,7 @@ public class UserDAO extends DAO {
         return ListFriend;
     }
 
+// Kiểm tra user1 và user2 có là bạn
     public boolean checkIsFriend(int ID1, int ID2) {
         try {
             PreparedStatement preparedStatement = con.prepareStatement("SELECT Friend.ID_User1\n"
@@ -232,6 +242,7 @@ public class UserDAO extends DAO {
         return false;
     }
 
+// Thêm bạn bè
     public void addFriendShip(int ID1, int ID2) {
         try {
             PreparedStatement preparedStatement = con.prepareStatement("INSERT INTO friend(ID_User1, ID_User2)\n" +
@@ -245,6 +256,7 @@ public class UserDAO extends DAO {
         }
     }
 
+// Xóa bạn bè
     public void removeFriendship(int ID1, int ID2) {
         try {
             PreparedStatement preparedStatement = con.prepareStatement("DELETE FROM friend\n" +
@@ -261,25 +273,26 @@ public class UserDAO extends DAO {
         }
     }
 
+// lấy hạng và tính điểm cho user
     public int getRank(int ID) {
         int rank = 1;
         try {
             PreparedStatement preparedStatement = con.prepareStatement("SELECT user.ID\n"
                     + "FROM user\n"
-                    + "ORDER BY (user.NumberOfGame+user.numberOfDraw*5+user.NumberOfWin*10) DESC");
+                    + "ORDER BY (user.NumberOfGame + user.numberOfDraw*5 + user.NumberOfWin*10) DESC");
             ResultSet rs = preparedStatement.executeQuery();
             while (rs.next()) {
                 if (rs.getInt(1) == ID)
                     return rank;
                 rank++;
             }
-
         } catch (SQLException e) {
             e.printStackTrace();
         }
         return -1;
     }
 
+// Lấy danh sách user có hạng cao nhất, giới hạn 8 người
     public List<User> getUserStaticRank() {
         List<User> list = new ArrayList<>();
         try {
@@ -309,6 +322,7 @@ public class UserDAO extends DAO {
         return list;
     }
 
+// Kết bạn
     public void makeFriend(int ID1, int ID2) {
         try {
             PreparedStatement preparedStatement = con.prepareStatement("INSERT INTO friend(ID_User1,ID_User2)\n"
@@ -322,6 +336,7 @@ public class UserDAO extends DAO {
         }
     }
 
+// Lấy số trận thắng
     public int getNumberOfWin(int ID) {
         try {
             PreparedStatement preparedStatement = con.prepareStatement("SELECT user.NumberOfWin\n"
@@ -338,6 +353,7 @@ public class UserDAO extends DAO {
         return -1;
     }
 
+// Lấy số trận hòa
     public int getNumberOfDraw(int ID) {
         try {
             PreparedStatement preparedStatement = con.prepareStatement("SELECT user.NumberOfDraw\n"
@@ -354,6 +370,7 @@ public class UserDAO extends DAO {
         return -1;
     }
 
+// Cập nhật +1 số trận hòa
     public void addDrawGame(int ID) {
         try {
             PreparedStatement preparedStatement = con.prepareStatement("UPDATE user\n"
@@ -368,6 +385,7 @@ public class UserDAO extends DAO {
         }
     }
 
+// Cập nhật +1 trận thắng
     public void addWinGame(int ID) {
         try {
             PreparedStatement preparedStatement = con.prepareStatement("UPDATE user\n"
@@ -382,6 +400,7 @@ public class UserDAO extends DAO {
         }
     }
 
+// Lấy số trận đã chơi
     public int getNumberOfGame(int ID) {
         try {
             PreparedStatement preparedStatement = con.prepareStatement("SELECT user.NumberOfGame\n"
@@ -398,6 +417,7 @@ public class UserDAO extends DAO {
         return -1;
     }
 
+// Cập nhật +1 số trận đã chơi
     public void addGame(int ID) {
         try {
             PreparedStatement preparedStatement = con.prepareStatement("UPDATE user\n"
@@ -412,6 +432,7 @@ public class UserDAO extends DAO {
         }
     }
 
+// Cập nhật -1 số trận đã chơi
     public void decreaseGame(int ID) {
         try {
             PreparedStatement preparedStatement = con.prepareStatement("UPDATE user\n"
@@ -426,6 +447,7 @@ public class UserDAO extends DAO {
         }
     }
 
+// Lấy NickName bằng ID user
     public String getNickNameByID(int ID) {
         try {
             PreparedStatement preparedStatement = con.prepareStatement("SELECT user.NickName\n"

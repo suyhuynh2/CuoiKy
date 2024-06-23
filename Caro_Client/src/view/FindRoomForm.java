@@ -51,9 +51,9 @@ public class FindRoomForm extends javax.swing.JFrame {
                 count--;
                 if (count >= 0) {
                     if (count >= 10)
-                        countDouwnTimeLabel.setText("00:" + count);
+                        jLabel_CountDouwnTime.setText("00:" + count);
                     else
-                        countDouwnTimeLabel.setText("00:0" + count);
+                        jLabel_CountDouwnTime.setText("00:0" + count);
                     jProgressBar1.setValue(Math.round((float) count / 20 * 100));
                 } else {
                     ((Timer) (e.getSource())).stop();
@@ -106,11 +106,11 @@ public class FindRoomForm extends javax.swing.JFrame {
         jPanel1 = new javax.swing.JPanel();
         jLabel_Title = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
-        loadingButton = new javax.swing.JButton();
+        jButton_Loading = new javax.swing.JButton();
         jLabel_Found = new javax.swing.JLabel();
         jLabel_Finding = new javax.swing.JLabel();
         jProgressBar1 = new javax.swing.JProgressBar();
-        countDouwnTimeLabel = new javax.swing.JLabel();
+        jLabel_CountDouwnTime = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
@@ -137,13 +137,13 @@ public class FindRoomForm extends javax.swing.JFrame {
 
         jPanel2.setBackground(new java.awt.Color(255, 255, 255));
 
-        loadingButton.setBackground(new java.awt.Color(204, 255, 255));
-        loadingButton.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        loadingButton.setText("Cancel");
-        loadingButton.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
-        loadingButton.addActionListener(new java.awt.event.ActionListener() {
+        jButton_Loading.setBackground(new java.awt.Color(204, 255, 255));
+        jButton_Loading.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jButton_Loading.setText("Cancel");
+        jButton_Loading.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
+        jButton_Loading.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                loadingButtonActionPerformed(evt);
+                jButton_LoadingActionPerformed(evt);
             }
         });
 
@@ -156,9 +156,9 @@ public class FindRoomForm extends javax.swing.JFrame {
         jLabel_Finding.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel_Finding.setText("Đang tìm đối thủ");
 
-        countDouwnTimeLabel.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
-        countDouwnTimeLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        countDouwnTimeLabel.setText("00:20");
+        jLabel_CountDouwnTime.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
+        jLabel_CountDouwnTime.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel_CountDouwnTime.setText("00:20");
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -169,18 +169,18 @@ public class FindRoomForm extends javax.swing.JFrame {
                 .addComponent(jProgressBar1, javax.swing.GroupLayout.PREFERRED_SIZE, 424, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addComponent(jLabel_Finding, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(countDouwnTimeLabel, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jLabel_CountDouwnTime, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addComponent(jLabel_Found, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(loadingButton, javax.swing.GroupLayout.PREFERRED_SIZE, 95, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jButton_Loading, javax.swing.GroupLayout.PREFERRED_SIZE, 95, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(168, 168, 168))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
                 .addGap(22, 22, 22)
-                .addComponent(countDouwnTimeLabel)
+                .addComponent(jLabel_CountDouwnTime)
                 .addGap(18, 18, 18)
                 .addComponent(jProgressBar1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
@@ -188,7 +188,7 @@ public class FindRoomForm extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addComponent(jLabel_Found)
                 .addGap(18, 18, 18)
-                .addComponent(loadingButton)
+                .addComponent(jButton_Loading)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
@@ -210,7 +210,7 @@ public class FindRoomForm extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void loadingButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_loadingButtonActionPerformed
+    private void jButton_LoadingActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_LoadingActionPerformed
         if (found)
             return;
         try {
@@ -221,17 +221,17 @@ public class FindRoomForm extends javax.swing.JFrame {
         timer.stop();
         Client.closeView(Client.View.FIND_ROOM);
         Client.openView(Client.View.HOMEPAGE);
-    }//GEN-LAST:event_loadingButtonActionPerformed
+    }//GEN-LAST:event_jButton_LoadingActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel countDouwnTimeLabel;
+    private javax.swing.JButton jButton_Loading;
+    private javax.swing.JLabel jLabel_CountDouwnTime;
     private javax.swing.JLabel jLabel_Finding;
     private javax.swing.JLabel jLabel_Found;
     private javax.swing.JLabel jLabel_Title;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JProgressBar jProgressBar1;
-    private javax.swing.JButton loadingButton;
     // End of variables declaration//GEN-END:variables
 }

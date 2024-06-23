@@ -38,11 +38,11 @@ public class Server {
             System.exit(1);
         }
         ThreadPoolExecutor executor = new ThreadPoolExecutor(
-                10,
-                100,
-                10,
-                TimeUnit.SECONDS,
-                new ArrayBlockingQueue<>(8)
+                10, // 10 thread chạy cùng lúc (corePoolSize)
+                100, // có tối đa 100 thread trong pool (maximumPoolSize)
+                10, // thời gian chờ 10s (keepAliveTime)
+                TimeUnit.SECONDS, // đơn vị tính bằng giây (unit)
+                new ArrayBlockingQueue<>(8) // kích thước hàng đợi 8 (workqueue)
         );
         admin = new Admin();
         admin.run();

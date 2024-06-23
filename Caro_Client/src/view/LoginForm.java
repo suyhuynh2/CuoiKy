@@ -32,12 +32,17 @@ public class LoginForm extends javax.swing.JFrame {
     }
 
     public LoginForm(String taiKhoan, String matKhau) {
+        String taikhoan = func.decode(taiKhoan);
+        String matkhau = func.decode(matKhau);
         initComponents();
-        jPasswordField_Password.setText(matKhau);
-        jTextField_UserName.setText(taiKhoan);
+        jPasswordField_Password.setText(matkhau);
+        jTextField_UserName.setText(taikhoan);
+        this.setTitle("Caro Game");
+        this.setIconImage(new ImageIcon("assets/image/caroicon.png").getImage());
         this.setDefaultCloseOperation(EXIT_ON_CLOSE);
         this.setResizable(false);
         this.setLocationRelativeTo(null);
+        func.displayIcon(jLabel_Image.getWidth(), jLabel_Image.getHeight(), "/image/background_caro.png", jLabel_Image);
     }
 
     public void showError(String message) {
